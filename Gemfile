@@ -5,6 +5,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
+
+#Using Bootstrap Sass library for styling layout
+gem 'bootstrap-sass','3.3.7'
+
 # User Postgresql as the database for production
 group :production do
   gem 'pg'
