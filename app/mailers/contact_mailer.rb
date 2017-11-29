@@ -7,4 +7,5 @@ class ContactMailer < ActiveMailer::Base
         @body = body
         mail(from: email, subject: 'Contact Form Massege')
     end
+
 end
