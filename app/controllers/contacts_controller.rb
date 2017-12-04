@@ -5,7 +5,6 @@ class ContactsController < ApplicationController
     
    def create
         @contact = Contact.new(contact_params)
-        
         if @contact.save
            name = params[:contact][:name]
            email = params[:contact][:email]
@@ -17,7 +16,6 @@ class ContactsController < ApplicationController
            flash[:danger] = "Error occured, Data can not be sent."
            redirect_to new_contact_path
         end
-        
    end
    
    private
